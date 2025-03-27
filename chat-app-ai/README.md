@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Chat App with Feedback System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a chat application built with **React.js**, **TypeScript**, and **Material-UI**. It includes a **Feedback System** that allows users to rate their chat experience and provide feedback. The project follows a **Redux-based state management** approach.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. **Chat System**
 
-### `npm start`
+- Users can send and receive messages.
+- Messages are displayed in a chat interface.
+- Message state is managed using Redux.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 2. **Feedback System**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Users can provide feedback on their chat experience.
+- Feedback includes a **rating (1-5 stars)** and an **optional comment**.
+- Feedback is submitted and stored using Redux.
 
-### `npm test`
+### 3. **Material-UI Theming**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The UI follows **Material-UI** design principles.
+- Custom theme applied using `ThemeProvider`.
+- Primary color: `#075e54` (WhatsApp-like theme).
 
-### `npm run build`
+### 4. **State Management with Redux**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Redux stores and manages the **messages** and **feedback**.
+- Uses `useSelector` and `useDispatch` hooks for efficient state updates.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. **Accessibility & User Experience**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Interactive UI with `Button`, `TextField`, and `Rating` components.
+- `onClose` functionality for dismissing the feedback form.
+- Styled using `sx` prop for better theme consistency.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Installation & Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **1. Clone the Repository**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+git clone https://github.com/********/*****.git
+cd chat-app
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### **2. Install Dependencies**
 
-## Learn More
+```sh
+yarn install  # or npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **3. Start the Development Server**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+yarn start  # or npm start
+```
+
+## Usage
+
+- Open `localhost:3000` in your browser.
+- Type a message and press **Send**.
+- Click on the **Feedback Button** to rate your experience.
+- Submit feedback to store it in Redux.
+
+## Future Enhancements
+
+- Implement a **backend API** for persistent data storage.
+- Add **WebSocket** support for real-time chat.
+- Improve **UI animations** and **mobile responsiveness**.
+
+---
+
+### **Author**: [Abhishek Chourasia](https://www.linkedin.com/in/abhichourasia/)
+
